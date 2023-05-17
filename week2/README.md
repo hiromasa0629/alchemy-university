@@ -1,3 +1,7 @@
+# Alchemy University Week 2
+
+1. [My key takeaway](#my-key-takeaway)
+
 # Gift List
 
 To get started with the repository, clone it and then run `npm install` in the top-level directory to install the depedencies.
@@ -24,3 +28,9 @@ There are a few files in utils:
 - The `example.js` script shows how we can generate a root, generate a proof and verify that some value is in the root using the proof. Try it out from the top-level folder with `node/example.js`
 - The `MerkleTree.js` should look familiar from the Merkle Tree module! This one has been modified so you should not have to deal with any crypto type conversion. You can import this in your client/server
 - The `verifyProof.js` should also look familiar. This was the last stage in the module. You can use this function to prove a name is in the merkle root, as show in the example.
+
+## My key takeaway
+1. First generate a merkle proof of the niceList in the console log and assign it it `MERKLE_ROOT` in the backend
+2. Create a merkleTree instance and use `getProof` function to get the proof
+3. Send the name and proof to the backend
+4. Verify the name and proof with `MERKLE_ROOT` using `verifyProof` function
